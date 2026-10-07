@@ -1,0 +1,8 @@
+services:
+  floorplan-3d:
+    build: .
+    container_name: floorplan-3d
+    network_mode: bridge
+    ports:
+      - "8093:80"
+    restart: unless-stopped
