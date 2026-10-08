@@ -1,7 +1,9 @@
 services:
   floorplan-3d:
-    build: .
+    image: ghcr.io/nj106/floorplan-3d:latest
     container_name: floorplan-3d
+    labels:
+      - com.centurylinklabs.watchtower.enable=true
     network_mode: bridge
     ports:
       - "8093:80"
