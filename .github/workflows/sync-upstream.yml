@@ -3,7 +3,7 @@ name: Sync upstream
 on:
   schedule:
     # 每天北京时间 16:00 自动同步父项目
-    - cron: '0 8 * * *'
+    - cron: '7 3 * * *'
   workflow_dispatch:
 
 permissions:
